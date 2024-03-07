@@ -1,5 +1,5 @@
 {% set name = "hfradarpy" %}
-{% set version = "0.1.5.3" %}
+{% set version = "0.1.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/rucool/hfradarpy/archive/{{ version }}.tar.gz
-  sha256: b216505411bb90ebe2221f4943af7b9a1f49a2af5f6504d311cc37b1252f9a97
+  sha256: a76ae6d4b2b2c09c8cbbc9e07bc94caf88d882fbc4bd5e7797c871dc19997fbc
 
 build:
   entry_points:
