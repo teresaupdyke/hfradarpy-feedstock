@@ -49,7 +49,7 @@ about:
   license_file: LICENSE
   doc_url: https://hfradarpy.readthedocs.io/en/latest/
   dev_url: https://github.com/rucool/hfradarpy
-  
+
 extra:
   recipe-maintainers:
     - najascutellatus
