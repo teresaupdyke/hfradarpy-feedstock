@@ -1,13 +1,13 @@
-{% set name = "hfradarpy" %}
-{% set version = "0.1.5.4" %}
+{% set name = "HFRadarPy" %}
+{% set version = "1.0.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/rucool/hfradarpy/archive/{{ version }}.tar.gz
-  sha256: a76ae6d4b2b2c09c8cbbc9e07bc94caf88d882fbc4bd5e7797c871dc19997fbc
+  url: https://github.com/rowg/HFRadarPy/archive/{{ version }}.tar.gz
+  sha256: b053c0d0a5bd870bf9a390d7acea7e85ddb20b60bbe2fb9fe611caeb2dc4f277
 
 build:
   entry_points:
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.10
     - pip
   run:
-    - python >=3.7
+    - python >=3.10
     - xarray
     - netcdf4
     - pyproj
@@ -32,6 +32,10 @@ requirements:
     - matplotlib-base
     - cmocean
     - joblib
+    - basemap
+    - geopy
+    - oceans
+    - pytest
 
 test:
   imports:
@@ -43,12 +47,10 @@ test:
     - pip
 
 about:
-  home: https://github.com/rucool/hfradarpy
-  summary: 'Toolbox to read in High Frequency Radar (HFR) files written in the Codar Tabular Format (CTF). Easily read CODAR Ocean Sensors SeaSonde and HELZEL Messtechnik GmbH WERA radial files.'
+  home: https://github.com/rowg/hfradarpy
+  summary: 'Toolbox to work with High Frequency Radar (HFR) files for coastal ocean observing.'
   license: MIT
   license_file: LICENSE
-  doc_url: https://hfradarpy.readthedocs.io/en/latest/
-  dev_url: https://github.com/rucool/hfradarpy
   
 extra:
   recipe-maintainers:
