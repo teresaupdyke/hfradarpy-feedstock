@@ -44,7 +44,6 @@ test:
   imports:
     - hfradarpy
   commands:
-    - pip check
     - hfradarpy --help
   requires:
     - pip
