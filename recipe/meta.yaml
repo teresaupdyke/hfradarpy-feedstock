@@ -13,13 +13,14 @@ build:
   entry_points:
     - hfradarpy=hfradarpy.cli:main
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
   number: 0
 
 requirements:
   host:
     - python >=3.10
     - pip
+    - setuptools
   run:
     - python >=3.10
     - xarray
