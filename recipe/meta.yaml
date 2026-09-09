@@ -1,5 +1,5 @@
 {% set name = "hfradarpy" %}
-{% set version = "1.0.0.0" %}
+{% set version = "2.0.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/rowg/hfradarpy/archive/{{ version }}.tar.gz
-  sha256: b053c0d0a5bd870bf9a390d7acea7e85ddb20b60bbe2fb9fe611caeb2dc4f277
+  sha256: 6f5e5f9056ebb8766229620518508b9c0d8a9f74d7d060a99d3a636ceef8d494
 
 build:
   entry_points:
@@ -37,6 +37,8 @@ requirements:
     - geopy
     - oceans
     - pytest
+    - shapely
+    - polycircles
 
 test:
   imports:
